@@ -1,6 +1,7 @@
 const emailButtons = document.querySelectorAll('.email');
-//const aboutButton = document.querySelector('#about');
+const aboutButton = document.querySelector('#about');
 const popupEmail = document.querySelector('#popup-email');
+const popupAbout = document.querySelector('#popup-about');
 const popups = document.querySelectorAll('.popup');
 
 function openPopUp(el) {
@@ -15,12 +16,17 @@ function closePopUp(el) {
 
 function openPopupEmail() {
   openPopUp(popupEmail);
-  //  cardFormValidator.toggleButtonSate();
+};
+
+function openPopupAbout() {
+  openPopUp(popupAbout);
 };
 
 emailButtons.forEach((button) => {
   button.addEventListener('click', openPopupEmail);
 });
+
+aboutButton.addEventListener('click', openPopupAbout);
 
 
 //close popups with esc and remove listeners after
