@@ -5,13 +5,14 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #00000000;
+  background-color: transparent;
   border: none;
   position: relative;
   top: -32px;
   right: -500px;
   cursor: pointer;
-  align-self: last baseline;
+  align-self: baseline;
+  z-index: 1;
 }
 
 .popup__close-button:hover {
