@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>InFinClub Consulting</title>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <img alt="Логотип" class="header__logo" src="./images/infin_logo.svg">
+      <div>
+        <a href="https://t.me/nybnyb1" class="link" target="_blank"><img alt="Телеграм" class="header__telegram-link" src="./images/telegram.svg"></a>
+        <img alt="Почта" class="link header__email-link email" src="./images/at.svg" id="email">
+      </div>
+    </header>
+    <main class="main">
+      <section class="lead">
+        <h1 class="lead__title light-effect">InFinClub Consulting</h1>
+        <p class="lead__subtitle">Услуги управленческого и финансового консалтинга</p>
+      </section>
+      <section class="places" aria-label="Идеи для ваших финансов">
+        <article class="place">
+          <div class="place__paragraph place__paragraph_green">
+            <h2 class="paragraph__title">Бизнес-планирование</h2>
+            <p class="paragraph__text">Финансовое моделирование для привлечения инвестиций в проекты.</p>
+          </div>
+          <div class="place__paragraph place__paragraph_blue">
+            <h2 class="paragraph__title">Оцифровка бизнеса</h2>
+            <p class="paragraph__text">Повышение эффективности управления активами фирмы и рост прибыли.</p>
+          </div>
+          <div class="place__paragraph place__paragraph_black">
+            <h2 class="paragraph__title">Обучение финансам</h2>
+            <p class="paragraph__text">По программе вуза или индивидуальное: финансовый менеджмент, корпоративные финансы, оценка инвестиций, бухгалтерский учет, управленческий учет.</p>
+          </div>
+          <div class="place__paragraph place__paragraph_dollar">
+            <h2 class="paragraph__title ">Личные финансы</h2>
+            <p class="paragraph__text">Wealth management: формирование инвестиционного портфеля, поиск проектов для инвестиций, создание личного/семейного финансового плана.</p>
+          </div>
+        </article>
+    </main>
+    <footer class="footer">
+      <nav>
+        <ul class="footer__links">
+          <li class="link footer__link" id="about">О нас</li>
+          <li class="link footer__link email" id="email">Напишите нам</li>
+        </ul>
+      </nav>
+      <p class="footer__copyright">© 2024 InFinClub Consulting</p>
+    </footer>
+    <div class="popup" id="popup-about">
+      <div class="popup__container">
+        <button type="button" class="popup__close-button"></button>
+        <h2 class="popup__legend">Николай Бувин</h2>
+        <p class="">гони баблишко</p>
+        <img alt="Логотип" class="header__logo" src="./images/infin_logo.svg">
+      </div>
+    </div>
+    <div class="popup" id="popup-email">
+      <div class="popup__container">
+        <button type="button" class="popup__close-button"></button>
+        <h2 class="popup__legend">Напишите нам ваш вопрос</h2>
+        <form name="popup__form" class="popup__form" id="popup-email__form" action="mailto:pavel.moskov@gmail.com" enctype="text/plain">
+          <input type="text" placeholder="Ваше имя" class="popup__input" name="nameInput" id="nameInput" required>
+          <span class="email-error popup__error"></span>
+          <textarea type="text" placeholder="Ваш вопрос" class="popup__input popup__input-text" name="requestInput" id="requestInput" required maxlength="400" minlength="2"></textarea>
+          <span class="request-error popup__error"></span>
+          <button type="submit" class="popup__submit-button">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./scripts/index.js"></script>
+</body>
+</html>

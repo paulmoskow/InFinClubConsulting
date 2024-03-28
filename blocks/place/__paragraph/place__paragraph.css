@@ -1,0 +1,73 @@
+.place__paragraph {
+  max-width: 400px;
+  min-height: 100px;
+  color: #050B14;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px #050b1460;
+  transition: box-shadow 0.3s ease;
+}
+
+.place__paragraph:hover {
+  box-shadow: 1px 1px 50px #050b1460;
+}
+
+.place__paragraph_green {
+  background: linear-gradient(to right, #676e5dCC, #ffffff 3%);
+}
+
+.place__paragraph_green:hover {
+  background: linear-gradient(to right, #676e5dCC, #ffffff 5%);
+}
+
+.place__paragraph_blue {
+  background: linear-gradient(to right, #4D9ABDCC, #ffffff 3%);
+}
+
+.place__paragraph_blue:hover {
+  background: linear-gradient(to right, #4D9ABDCC, #ffffff 5%);
+}
+
+.place__paragraph_black {
+  background: linear-gradient(to right, #79a471CC, #ffffff 3%);
+}
+
+.place__paragraph_black:hover {
+  background: linear-gradient(to right, #79a471CC, #ffffff 5%);
+}
+
+.place__paragraph_dollar {
+  background: linear-gradient(to right, #278664CC, #ffffff 3%);
+}
+
+.place__paragraph_dollar:hover {
+  background: linear-gradient(to right, #278664CC, #ffffff 5%);
+}
+
+.paragraph__title {
+  margin: 50px 0 0 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+.paragraph__text {
+  margin: 50px 50px 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 736px) {
+  .paragraph__title {
+    font-size: 1.33rem;
+    line-height: 1.25;
+    font-weight: 500;
+    max-width: 230px;
+  }
+
+  .place__paragraph {
+    max-width: 304px;
+  }
+}

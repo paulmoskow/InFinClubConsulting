@@ -1,0 +1,24 @@
+.footer__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.12;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1.12rem;
+  transition: opacity linear 0.5s;
+}
+
+.footer__link:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 510px) {
+  .footer__link {
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding-bottom: 2rem;
+  }
+}
+
