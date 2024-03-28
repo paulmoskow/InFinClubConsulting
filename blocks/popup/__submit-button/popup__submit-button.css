@@ -12,6 +12,7 @@
   border: none;
   border-radius: 5px;
   box-shadow: 1px 1px 20px #050b1460;
+  opacity: 1;
 }
 
 .popup__submit-button:hover {
