@@ -3,6 +3,7 @@ const aboutButton = document.querySelector('#about');
 const popupEmail = document.querySelector('#popup-email');
 const popupAbout = document.querySelector('#popup-about');
 const popups = document.querySelectorAll('.popup');
+const popupForm = document.getElementById('popup__form');
 
 function openPopUp(el) {
   el.classList.add('popup_opened');
@@ -13,6 +14,28 @@ function closePopUp(el) {
   el.classList.remove('popup_opened');
   document.removeEventListener('keydown', closeByEsc);
 };
+
+function closePopupAndSubmitForm(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  const form = event.target;
+  closePopUp(popupEmail); // Close popup
+
+  // Construct mailto link
+  const name = encodeURIComponent(form.elements.name.value);
+  const message = encodeURIComponent(form.elements.message.value);
+  const mailtoLink = `mailto:cfookay@gmail.com?subject=${name}&body=${message}`;
+
+  // Open mailto link
+  window.location.href = mailtoLink;
+
+  // Reset form after a short delay
+  setTimeout(function() {
+    form.reset();
+  }, 500);
+}
+
+popupForm.addEventListener('submit', closePopupAndSubmitForm);
 
 function openPopupEmail() {
   openPopUp(popupEmail);
