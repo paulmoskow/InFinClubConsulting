@@ -1,7 +1,7 @@
 .places {
   width: 100%;
   margin: 92px auto 12px;
-  background-color: #ffffffef;
+  /*background-color: #ffffffef;*/
   display: flex;
   flex-direction: column;
   justify-content: center;

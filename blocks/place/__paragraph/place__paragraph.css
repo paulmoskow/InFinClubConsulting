@@ -49,6 +49,7 @@
   font-weight: 400;
   font-size: 1.7rem;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .paragraph__text {
