@@ -1,9 +1,12 @@
 const emailButtons = document.querySelectorAll('.email');
 const aboutButton = document.querySelector('#about');
+const contactsButtons = document.querySelectorAll('.link__black');
 const popupEmail = document.querySelector('#popup-email');
 const popupAbout = document.querySelector('#popup-about');
+const popupContacts = document.getElementById('popup-contacts');
 const popups = document.querySelectorAll('.popup');
 const popupForm = document.getElementById('popup__form');
+const contactsLinks = document.querySelectorAll('#popup-contacts .link');
 
 function openPopUp(el) {
   el.classList.add('popup_opened');
@@ -51,6 +54,23 @@ emailButtons.forEach((button) => {
 
 aboutButton.addEventListener('click', openPopupAbout);
 
+contactsButtons.forEach((button) => {
+  button.addEventListener('click', openPopupContacts);
+});
+
+contactsLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    // Close popup with contacts with delay
+    setTimeout(() => {
+      closePopUp(popupContacts);
+    }, 100);;
+   
+  });
+});
+
+function openPopupContacts() {
+  openPopUp(popupContacts);
+};
 
 //close popups with esc and remove listeners after
 function closeByEsc(evt) {
@@ -68,3 +88,6 @@ popups.forEach((popup) => {
     }
   });
 });
+
+
+

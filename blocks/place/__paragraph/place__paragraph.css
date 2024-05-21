@@ -5,6 +5,7 @@
   border-radius: 10px;
   box-shadow: 1px 1px 20px #050b1460;
   transition: box-shadow 0.3s ease;
+  position: relative;
 }
 
 .place__paragraph:hover {

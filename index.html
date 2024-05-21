@@ -11,7 +11,7 @@
     <header class="background">
       <div class="header">
         <img alt="Логотип" class="header__logo" src="./images/IFC.svg">
-        <div>
+        <div id="contacts">
           <a href="whatsapp://send?phone=+79852737956" class="link" target="_blank"><img alt="Телеграм" class="header__telegram-link" src="./images/whatsapp_logo.svg"></a>
           <a href="https://t.me/nybnyb1" class="link" target="_blank"><img alt="Телеграм" class="header__telegram-link" src="./images/telegram.svg"></a>
           <img alt="Почта" class="link header__email-link email" src="./images/at.svg" id="email">
@@ -27,32 +27,36 @@
         <article class="place">
           <div class="place__paragraph place__paragraph_green">
             <h2 class="paragraph__title">Бизнес-планирование</h2>
-            <p class="paragraph__text">• Разработка бизнес-планов и финансовых моделей; <br>
-              • Привлечение финансирования; <br>
-              • Оценка бизнеса. </p>
+            <p class="paragraph__text">• разработка бизнес-планов и финансовых моделей <br>
+              • привлечение финансирования <br>
+              • оценка бизнеса </p>
+            <a href="#contacts" class="link link__black">подробнее &rarr;</a>
           </div>
           <div class="place__paragraph place__paragraph_blue">
             <h2 class="paragraph__title">Оцифровка бизнеса</h2>
-            <p class="paragraph__text">• Создание системы управленческого учета и анализа деятельности компании; <br>
-              • Услуги финансового директора.</p>
+            <p class="paragraph__text">• создание системы управленческого учета и анализа деятельности компании <br>
+              • услуги финансового директора</p>
+              <a href="#contacts" class="link link__black">подробнее &rarr;</a>
           </div>
           <div class="place__paragraph place__paragraph_black">
             <h2 class="paragraph__title">Обучение финансам</h2>
-            <p class="paragraph__text">• Интенсив-курс по финансам по нашей методике; <br>
-              • Помощь в обучении и сдаче экзаменов по предметам: <br>
-              - финансовый менеджмент;<br>
-              - корпоративные финансы;<br>
-              - оценка инвестиций;<br>
-              - бухгалтерский учет;<br>
-              - управленческий учет.
+            <p class="paragraph__text">• интенсив-курс по финансам по нашей методике <br>
+              • помощь в обучении и сдаче экзаменов по предметам: <br>
+              - финансовый менеджмент<br>
+              - корпоративные финансы<br>
+              - оценка инвестиций<br>
+              - бухгалтерский учет<br>
+              - управленческий учет
             </p>
+            <a href="#contacts" class="link link__black">подробнее &rarr;</a>
           </div>
           <div class="place__paragraph place__paragraph_dollar">
             <h2 class="paragraph__title ">Личные финансы</h2>
-            <p class="paragraph__text">• Разработка личного финансового плана;<br>
-              • Поиск объектов инвестиций;<br>
-              • Создание инвестиционного портфеля.
+            <p class="paragraph__text">• разработка личного финансового плана<br>
+              • поиск объектов инвестиций<br>
+              • создание инвестиционного портфеля
             </p>
+            <a href="#contacts" class="link link__black">подробнее &rarr;</a>
           </div>
         </article>
     </main>
@@ -64,18 +68,17 @@
             <li class="link footer__link email" id="email">Напишите нам</li>
           </ul>
         </nav>
-        <p class="footer__copyright">© 2024 InFinClub Consulting</p>        
+        <p class="footer__copyright">© 2024 InFinClub Consulting<br>
+        designed by paulmoskow</p>        
       </div>
     </footer>
     <div class="popup" id="popup-about">
       <div class="popup__container">
         <button type="button" class="popup__close-button"></button>
         <h2 class="popup__legend">О НАС</h2>
-        <div class="popup__info">
-          <p class="paragraph__text">• Опыт 10+ лет в финансовом менеджменте малых, средних и крупных компаниях и группах.<br><br>
-            • Опыт привлечения финансирования на сумму 100+ млн.долларов.<br><br>
-            • Опыт разработки систем управленческого учета в производстве, торговле, услугах.</p>
-        </div>
+          <p class="paragraph__text">• опыт 10+ лет в финансовом менеджменте малых, средних и крупных компаний и групп<br><br>
+            • опыт привлечения финансирования на сумму 100+ млн долларов<br><br>
+            • опыт разработки систем управленческого учета в производстве, торговле и услугах</p>
        </div>
     </div>
     <div class="popup" id="popup-email">
@@ -89,6 +92,19 @@
         </form>
       </div>
     </div>
+
+    <div class="popup" id="popup-contacts">
+      <div class="popup__container popup__container-black">
+        <button type="button" class="popup__close-button"></button>
+        <h2 class="popup__legend">Контакты для более подробной информации</h2>
+        <div class="popup__contacts">
+          <a href="whatsapp://send?phone=+79852737956" class="link" target="_blank"><img alt="Телеграм" class="header__telegram-link" src="./images/whatsapp_logo.svg"></a>
+          <a href="https://t.me/nybnyb1" class="link" target="_blank"><img alt="Телеграм" class="header__telegram-link" src="./images/telegram.svg"></a>
+          <img alt="Почта" class="link header__email-link email" src="./images/at.svg" id="email">
+        </div>
+      </div>
+    </div>
+
   </div>
   <script type="module" src="./scripts/index.js"></script>
 </body>
