@@ -1,4 +1,5 @@
 {
+  "homepage": "https://paulmoskow.github.io/InFinClubConsulting",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack serve",
