@@ -1,0 +1,21 @@
+.page {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background-image: url('../../images/background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background {
+  background: #050B14C0;
+}
