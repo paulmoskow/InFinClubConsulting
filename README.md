@@ -1,2 +1,25 @@
+# Business Card Website for Financial Consulting
 
-### Публичная ссылка на проект: https://paulmoskow.github.io/InFinClubConsulting 
+## Overview
+
+This is a one-page business card website for a company in the financial consulting industry.
+
+## Features
+
+- **Responsive and professional design**
+  - The website features a clean, strict design that is adaptable to various devices.
+
+- **Simple functionality**
+  - Includes three types of contact methods to facilitate communication.
+
+- **SEO optimization**
+  - The website is optimized for search engine visibility.
+
+## Tech Stack
+
+- **Managing popups with JavaScript**
+- **Adaptive CSS**
+- **Nested file structure**
+
+
+### Public link: https://paulmoskow.github.io/InFinClubConsulting 
